@@ -10,13 +10,19 @@ const assignment = {};
  * Calculate and return the sum of the numbers in an array.
  * If you did Challenge - 1, remove the comment in the line just after this function
  * 
- * @param {Array} arrayOfNumbers the array of numbers to sum
- * @returns number the sum of the numbers
- */
+//  * @param {Array} arrayOfNumbers the array of numbers to sum
+//  * @returns number the sum of the numbers
+//  */
 function sumOfNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+    let sum = 0;
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        sum += arrayOfNumbers[i];
+    }
+    return sum;
 }
-// assignment.sumOfNumbers = sumOfNumbers;
+
+assignment.sumOfNumbers = sumOfNumbers;
+
 
 /**
  * Challenge - 2
@@ -24,13 +30,23 @@ function sumOfNumbers(arrayOfNumbers) {
  * Count all even numbers within an array of numbers.
  * If you did Challenge - 2, remove the comment in the line just after this function
  * 
- * @param {Array} arrayOfNumbers the array containing even or non-even numbers
- * @returns number the count of even numbers
- */
-function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.length;
+//  * @param {Array} arrayOfNumbers the array containing even or non-even numbers
+//  * @returns number the count of even numbers
+//  */
+ function countEvenNumbers(arrayOfNumbers) {
+    let evenCount = 0;
+    for (let i = 0; i < arrayOfNumbers.length; i++) {
+        if (arrayOfNumbers[i] % 2 === 0) {
+            evenCount++
+        }
+    }
+    return evenCount;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
+
+assignment.countEvenNumbers = countEvenNumbers;
+    
+
+    
 
 /**
  * Challenge - 3
@@ -43,12 +59,12 @@ function countEvenNumbers(arrayOfNumbers) {
  * 
  * See https://www.thoughtco.com/celcius-to-farenheit-formula-609227 for the conversion formula
  * 
- * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
- * @returns Array the converted temperatures in Fahrenheit
- */
-function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
-}
+//  * @param {Array} arrayOfNumbers the array containing temperatures in Celsius to be converted
+//  * @returns Array the converted temperatures in Fahrenheit
+//  */
+// function celsiusToFahrenheit(arrayOfNumbers) {
+//     return arrayOfNumbers;
+// }
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
 
